@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{sidebar -sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section>
+        <div class="side-bar d-flex flex-column justify-content-between p-3">
+            <div class="nav-tab d-flex flex-column ms-2 pt-2">
+                <div class=" py-2 sliders "><span class="" role="button" id="search">Search</span></div>
+                <div class=" py-2 sliders "><span role="button" id="categoryBtn">Categories</span></div>
+                <div class=" py-2 sliders "><span role="button" id="area">Area</span></div>
+                <div class=" py-2 sliders "><span role="button" id="igredients">Ingredients</span></div>
+                <div class=" py-2 sliders "><span role="button" id="contact">Contact Us</span></div>
+            </div>
+            <div class="inner-icons ms-2 pb-3">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-solid fa-globe"></i> <br>
+                <span>Copyright Â© 2019 All Rights Reserved.</span>
+            </div>
+        </div>
+    </section>
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{sidebar column-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section>
+        <div class="side-bar-col d-flex flex-column justify-content-between align-items-center p-3">
+            <img class="img-fluid logo-img" src="./logo.png" alt="">
+            <i id="sideBtn" role="button" class=" fs-1 fa-solid fa-bars"></i>
+            <i id="close-sideBtn" role="button" class=" fs-1 fa-solid fa-x d-none"></i>
+            <div class="side-icons d-flex flex-column align-items-center p-2">
+                <i role="button" class="fa-solid fa-globe pb-2"></i>
+                <i role="button" class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{main-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section class="main-section pt-5 d-none">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="meal-body rounded-3 overflow-hidden position-relative">
+                        <img class="img-fluid rounded-3" src="./58oia61564916529.jpg" alt="">
+                        <div
+                            class="img-cover  position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center">
+                            <span class="fs-2 fw-semibold ms-2">Corba</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="meal-body rounded-3 overflow-hidden position-relative">
+                        <img class="img-fluid rounded-3" src="./58oia61564916529.jpg" alt="">
+                        <div
+                            class="img-cover  position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center">
+                            <span class="fs-2 fw-semibold ms-2">Corba</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="meal-body rounded-3 overflow-hidden position-relative">
+                        <img class="img-fluid rounded-3" src="./58oia61564916529.jpg" alt="">
+                        <div
+                            class="img-cover  position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center">
+                            <span class="fs-2 fw-semibold ms-2">Corba</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="meal-body rounded-3 overflow-hidden position-relative">
+                        <img class="img-fluid rounded-3" src="./58oia61564916529.jpg" alt="">
+                        <div
+                            class="img-cover  position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center">
+                            <span class="fs-2 fw-semibold ms-2">Corba</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{category-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section class="category-section pt-5">
+        <div class="container ">
+
+            <div id="category-box" class="row g-4 d-none">
+                <div class="loading position-absolute top-50 start-50">
+                    <span class="loader d-block"></span>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="meal-body rounded-3 overflow-hidden position-relative">
+                        <img class="img-fluid rounded-3" src="./beef.png" alt="">
+                        <div
+                            class="img-cover  position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column text-center align-items-center">
+                            <span class="fs-2 fw-semibold ms-2">Beef</span>
+                            <p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have
+                                been eating beef since prehistoric times</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{category filter-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section class="category-section pt-5">
+        <div class="container">
+            <div id="category-filter" class="row g-4 d-none">
+                <div class="loading position-absolute top-50 start-50">
+                    <span class="loader d-block"></span>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="meal-body rounded-3 overflow-hidden position-relative">
+                            <img class="img-fluid rounded-3" src="./beef.png" alt="">
+                            <div
+                                class="img-cover  position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column text-center align-items-center">
+                                <span class="fs-2 fw-semibold ms-2">Beef</span>
+                                <p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have
+                                    been eating beef since prehistoric times</p>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{area-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section class="area-section pt-4">
+        <div class="container">
+            <div id="area-box" class="row g-4 d-none">
+                <div class="loading position-absolute top-50 start-50">
+                    <span class="loader d-block"></span>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <i class="fa-solid fa-house-laptop fa-5x text-white"></i>
+                                    <span class="fs-2 fw-semibold ms-2 text-white">Beef</span>
+                                </div>
+                            </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{area filter-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section class="areaFilter-section">
+        <div class="container">
+            <div id="area-filter" class="row g-4 d-none">
+                <div class="loading position-absolute top-50 start-50">
+                    <span class="loader d-block"></span>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="meal-body rounded-3 overflow-hidden position-relative">
+                            <img class="img-fluid rounded-3" src="./beef.png" alt="">
+                            <div
+                                class="img-cover  position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column text-center align-items-center">
+                                <span class="fs-2 fw-semibold ms-2">Beef</span>
+                                <p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have
+                                    been eating beef since prehistoric times</p>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{ingredients-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section class="ingredients-section">
+        <div class="container">
+            <div id="ingredients-box" class="row g-4 d-none">
+                <div class="loading position-absolute top-50 start-50">
+                    <span class="loader d-block"></span>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <i class="fa-solid fa-drumstick-bite fa-5x text-white"></i>
+                        <span class="fs-2 fw-semibold ms-2 text-white">Beef</span>
+                        <p></p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{ingredients filter-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section class="ingredients-filter-section">
+        <div class="container">
+            <div id="ingredients-filter" class="row g-4 d-none">
+                <div class="loading position-absolute top-50 start-50">
+                    <span class="loader d-block"></span>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="meal-body rounded-3 overflow-hidden position-relative">
+                            <img class="img-fluid rounded-3" src="./beef.png" alt="">
+                            <div
+                                class="img-cover  position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column text-center align-items-center">
+                                <span class="fs-2 fw-semibold ms-2">Beef</span>
+                                <p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have
+                                    been eating beef since prehistoric times</p>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{form-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section id="formSection" class="form-section d-none">
+        
+        <div class="container w-75 d-flex justify-content-center align-items-center">
+            <div class="form-container w-75 d-flex gap-3 ">
+                <div class="mb-3 col-lg-6 d-flex flex-column justify-content-center align-items-center ">
+                    <div class="py-4 w-100">
+                        <input type="text" class="form-control mb-3  me-3" id="enterName" placeholder="Enter Your Name">
+                        <p class="alert alert-danger py-2 w-100 text-center d-none m-0" id="nameError">Special
+                            characters and numbers not allowed</p>
+                    </div>
+                    <div class="py-4 w-100">
+                        <input type="tel" class="form-control  mb-3  me-3" id="enterPhone"
+                            placeholder="Enter Your Phone">
+                        <p class="alert alert-danger py-2 w-100 text-center d-none m-0" id="phoneError">Enter valid
+                            Phone Number</p>
+                    </div>
+                    <div class="py-4 w-100">
+                        <input type="password" class="form-control mb-3  me-3" id="enterPassword"
+                            placeholder="Enter Your Password">
+                        <p class="alert alert-danger py-2 w-100 text-center d-none m-0" id="passwordError">Enter valid
+                            password *Minimum eight characters, at least one letter and one number:*</p>
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-6 d-flex flex-column justify-content-center align-items-center ">
+                    <div class="py-4 w-100">
+                        <input type="email" class="form-control mb-3  me-3" id="enterEmail"
+                            placeholder="Enter Your Email">
+                        <p class="alert alert-danger py-2 w-100 text-center d-none m-0" id="emailError">Email not valid
+                            *exemple@yyy.zzz</p>
+                    </div>
+                    <div class="py-4 w-100">
+                        <input type="number" class="form-control  mb-3  me-3" id="enterAge"
+                            placeholder="Enter Your Age">
+                        <p class="alert alert-danger py-2 w-100 text-center d-none m-0" id="ageError">Enter valid age
+                        </p>
+                    </div>
+                    <div class="py-4 w-100">
+                        <input type="password" class="form-control mb-3  me-3" id="reEnterPassword"
+                            placeholder="Enter Your Password">
+                        <p class="alert alert-danger py-2 w-100 text-center d-none m-0" id="reEnterPasswordError">
+                            Re-Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submitBtn-form d-flex justify-content-center align-items-center ">
+            <button id="submitBtn" disabled class="btn btn-outline-danger">Submit</button>
+        </div>
+    </section>
+
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{search-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section id="searchSection position-relative">
+        <div class="container d-flex justify-content-center">
+            <div class="searchContainer d-flex w-75 position-absolute top-0 pt-4 d-none">
+                <input type="text" class="form-control text-white bg-transparent searchForm me-3" id="searchName"
+                    placeholder="Search By Name">
+                <input type="text" class="form-control text-white bg-transparent searchForm ms-3" id="searchLetter"
+                    placeholder="Search By First Letter">
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div id="searchNameRow" class="row g-4">
+                <div class="loading position-absolute top-50 start-50">
+                    <span class="loader d-block"></span>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 searchNameDiv d-none ">
+                <div class="meal-body rounded-3 overflow-hidden position-relative">
+                    <img class="img-fluid rounded-3" src="./58oia61564916529.jpg" alt="">
+                    <div
+                        class="img-cover  position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center">
+                        <span class="fs-2 fw-semibold ms-2">Corba</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div> -->
+    </section>
+    <section class="pt-5">
+        <div class="container position-absolute top-0 start-50 translate-middle-x pt-5">
+            <div id="searchNameRow" class="row g-4 pt-5">
+                <div class="loading d-flex justify-content-center top-50">
+                    <span class="loader d-block"></span>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 searchNameDiv d-none ">
+                <div class="meal-body rounded-3 overflow-hidden position-relative">
+                    <img class="img-fluid rounded-3" src="./58oia61564916529.jpg" alt="">
+                    <div
+                        class="img-cover  position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center">
+                        <span class="fs-2 fw-semibold ms-2">Corba</span>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- /* {{{{{{{{{{{{{{{{{{{{{{{details-sction}}}}}}}}}}}}}}}}}}}}}}} */ -->
+    <section class="detailsSection">
+        <div class="container position-absolute top-0 start-50 translate-middle-x pt-5">
+            <div id="rowDetails" class="row pb-5 d-none">
+                <div class="loading position-absolute top-50 start-50">
+                    <span class="loader d-block"></span>
+                </div> 
+                <!-- <div class="col-lg-4">
+                    <img class="img-fluid rounded-3" src="./58oia61564916529.jpg" alt="">
+                    <span class="text-white fs-2">Corba</span>
+                </div>
+                <div class="col-lg-8 text-white">
+                    <h2>Instructions</h2>
+                    <p>Pick through your lentils for any foreign debris, rinse them 2 or 3 times, drain, and set aside.
+                        Fair warning, this will probably turn your lentils into a solid block that you’ll have to break
+                        up later In a large pot over medium-high heat, sauté the olive oil and the onion with a pinch of
+                        salt for about 3 minutes, then add the carrots and cook for another 3 minutes. Add the tomato
+                        paste and stir it around for around 1 minute. Now add the cumin, paprika, mint, thyme, black
+                        pepper, and red pepper as quickly as you can and stir for 10 seconds to bloom the spices.
+                        Congratulate yourself on how amazing your house now smells. Immediately add the lentils, water,
+                        broth, and salt. Bring the soup to a (gentle) boil. After it has come to a boil, reduce heat to
+                        medium-low, cover the pot halfway, and cook for 15-20 minutes or until the lentils have fallen
+                        apart and the carrots are completely cooked. After the soup has cooked and the lentils are
+                        tender, blend the soup either in a blender or simply use a hand blender to reach the consistency
+                        you desire. Taste for seasoning and add more salt if necessary. Serve with crushed-up crackers,
+                        torn up bread, or something else to add some extra thickness. You could also use a traditional
+                        thickener (like cornstarch or flour), but I prefer to add crackers for some texture and
+                        saltiness. Makes great leftovers, stays good in the fridge for about a week.</p>
+                    <h3>Area : <span>Turkish</span></h3>
+                    <h3>Category : <span>Side</span></h3>
+                    <h3>Recipes :</h3>
+                    <ul class="list-unstyled d-flex g-3 flex-wrap">
+                        <li class="alert alert-info m-2 p-1">1 cup Lentils</li>
+                        <li class="alert alert-info m-2 p-1">1 large Onion</li>
+                        <li class="alert alert-info m-2 p-1">1 large Carrots</li>
+                        <li class="alert alert-info m-2 p-1">1 tbs Tomato Puree</li>
+                        <li class="alert alert-info m-2 p-1">2 tsp Cumin</li>
+                        <li class="alert alert-info m-2 p-1">1 tsp Paprika</li>
+                        <li class="alert alert-info m-2 p-1">1/2 tsp Mint</li>
+                        <li class="alert alert-info m-2 p-1">1/2 tsp Thyme</li>
+                        <li class="alert alert-info m-2 p-1">1/4 tsp Black Pepper</li>
+                        <li class="alert alert-info m-2 p-1">1/4 tsp Red Pepper Flakes</li>
+                        <li class="alert alert-info m-2 p-1">4 cups Vegetable Stock</li>
+                        <li class="alert alert-info m-2 p-1">1 cup Water</li>
+                        <li class="alert alert-info m-2 p-1">Pinch Sea Salt</li>
+                    </ul>
+                    <h3>Tags :</h3>
+                    <ul class="list-unstyled d-flex g-3 flex-wrap">
+                        <li class="alert alert-danger m-2 p-1">Soup</li>
+                    </ul>
+                    <a href="" target="_blank" class="btn btn-success">Source</a>
+                    <a href="" target="_blank" class="btn btn-danger">YouTube</a>
+
+
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>
